@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Matrix-Invers';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Determinan" href="Determinan.html" />
     <link rel="prev" title="Aljabar Matrix" href="aljabarmatrix.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -182,6 +183,14 @@
 <li class="toctree-l1"><a class="reference internal" href="SISTEM%20LINIER.html">SISTEM LINEAR DAN METODE ELIMINASI GAUSSIAN</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aljabarmatrix.html">Aljabar Matrix</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Matriks Invers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinan.html"><strong>Determinan</strong></a></li>
+
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -777,6 +786,9 @@ IA-1</p>
  [ -4.   0.  -1. -13.  -5.   0.   0.   1.]]
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -839,6 +851,9 @@ IA-1</p>
  [ 5. -0.  1.  4.  3. -1. -0. -0.]
  [-2.  0.  0.  7.  1.  1. -1.  0.]
  [-1.  0.  0.  9.  2.  1.  0. -1.]]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -1093,6 +1108,13 @@ dengan matriks B</p>
 <p>Dari operasi diatas bisa kita dapatkan nilai dari X1,X2,X3,X4
 adalah
 <img alt="Screenshot (98).png" src="data:image/png;base64,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" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -1134,6 +1156,15 @@ adalah
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Aljabar Matrix</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Determinan.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Determinan</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
